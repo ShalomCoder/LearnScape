@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="bootstrap-icons.css" />
+    <link rel="stylesheet" href="aos.css" />
+    <title>LearnScape</title>
+  </head>
+  <body class="m-0 p-0 bg-black/[80%]">
+
+
+    <div class="bg-white">
+      <div class="w-vw text-center h-[350px] flex-column content-center bg-[url('../img/hero-bg.jpg')] bg-auto bg-no-repeat bg-center p-0">
+        <div class="bg-black/[70%] h-full flex-column content-center">
+          <p class="text-4xl text-zinc-100 font-normal mb-2" data-aos="fade-up">Welcome to LearnScape!</p>
+          <p class="text-xl text-zinc-200 font-semi-bold mb-4" data-aos="fade-up" data-aos-delay="50">Learn anything, anywhere</p>
+          <button onclick="window.location=('login.html')" class="bg-lime-500 py-3 px-6 text-lg text-white rounded-full hover:bg-slate-50 hover:text-lime-500 hover:ring-2 hover:ring-lime-500 transition-all duration-400" data-aos="fade-up" data-aos-delay="100">Get started <i class="bi-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-neutral-50 text-3xl mt-[40px] text-center" data-aos="fade-up" data-aos-delay="150">Learn like it's really you</p>
+    <p class="text-neutral-100 text-md mt-2 max-w-[600px] text-center m-auto mb-5 leading-loose" data-aos="fade-up" data-aos-delay="200">Customizable learning styles make you personalize your learning like never before. 
+      Which do you prefer: Quiz, Article, Video, Podcast... we've got'em all!</p>
+      <br>
+
+    <div class="bg-[#f4f1f8] w-vw min-h-[250px] p-3" data-aos="fade-up">
+      <br>
+      <p class="text-neutral-800 text-center text-3xl mb-4">Select a Category:</p>
+
+      <div class="w-[320px] mx-auto bg-neutral-50 shadow flex items-center py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 mb-4" onclick="loginAlert()">
+        <p class="text-xl">Physics</p>
+        <p class="ml-[auto]"><i class="bi-chevron-right"></i></p>
+      </div>
+      
+      <div class="w-[320px] mx-auto bg-neutral-50 shadow flex items-center py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 mb-4" onclick="loginAlert()">
+        <p class="text-xl">Chemistry</p>
+        <p class="ml-[auto]"><i class="bi-chevron-right"></i></p>
+      </div>
+
+      <div class="w-[320px] mx-auto bg-neutral-50 shadow flex items-center py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 mb-4" onclick="loginAlert()">
+        <p class="text-xl">Biology</p>
+        <p class="ml-[auto]"><i class="bi-chevron-right"></i></p>
+      </div>
+
+      <div class="w-[320px] mx-auto bg-neutral-50 shadow flex items-center py-3 px-6 rounded-full hover:shadow-lg transition-all duration-300 mb-4" onclick="loginAlert()">
+        <p class="text-xl">Programming</p>
+        <p class="ml-[auto]"><i class="bi-chevron-right"></i></p>
+      </div>
+
+      <div class="w-[320px] mx-auto bg-lime-300 shadow text-center py-3 px-6 rounded-full hover:shadow-lg transition-all duration-500 mb-4" onclick="loginAlert()">
+        <p class="text-xl">See all</p>
+      </div>
+    </div>
+
+    <div class="bg-neutral-300 w-vw min-h-[250px] pb-6">
+      <br>
+      <p class="text-neutral-800 text-3xl text-center">Here's what others are saying about LearnScape</p>
+      <br>
+      <div class="w-[380px] mx-auto text-left p-6 bg-white shadow-lg rounded-xl mb-4" data-aos="fade-up">
+        <p class="text-lg leading-snug text-neutral-950 mb-2">I've always loved e-learning, and I've always wanted to learn ahead of my class. Now I can combine the two, without the cost.</p>
+        <p class="text-lg text-right text-neutral-800"><i class="bi-person-fill"></i> John Doe</p>
+      </div>
+
+      <div class="w-[380px] mx-auto text-left p-6 bg-white shadow-lg rounded-xl" data-aos="fade-up">
+        <p class="text-lg leading-snug text-neutral-950 mb-2">LearnScape has made my academic life smoother. I used to struggle to grasp concepts in class but now I can learn in my own way, at my own pace.</p>
+        <p class="text-lg text-right text-neutral-800"><i class="bi-person-fill"></i> Ellen Walker</p>
+      </div>
+
+      <p class="text-center text-2xl mt-6 text-neutral-800">Ready to join us?</p>
+      <div class="w-100 text-center">
+        <button class=" text-lg py-3 px-6 bg-lime-500 rounded-full m-auto mt-3" onclick="loginAlert()">Create an Account <i class="bi-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="w-vw bg-white py-2 px-4 text-center">
+      <p>&copy; 2024 Agbongo Shalom</p>
+    </div>
+    <script src="aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
+<script>
+  function loginAlert(){
+    window.location = ('login.html')
+  }
+</script>
